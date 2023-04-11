@@ -10,15 +10,17 @@ export default class RenderMethod extends Component {
     }
     componentDidMount (){
         console.log('Hello from component from DidMount')
-        setTimeout(() =>  console.log('Hello from DidMount setTimout') ,5000)
+        console.log('Hello from component DidMount #2')
+        setTimeout(() =>  console.log('Hello from DidMount setTimout') ,8000)
     }; 
     
     
   render() {
-    setTimeout(() =>  console.log('Hello from render') ,3000)
+    console.log('Hello from render #1')
+    setTimeout(() =>  console.log('Hello from render #2 setTimeout') ,5000)
     return (
       <div>
-        {setTimeout(() =>  console.log('Hi') ,5000)}
+        {setTimeout(() =>  console.log('Hi from return') ,10000)}
       </div>
     )
   }
