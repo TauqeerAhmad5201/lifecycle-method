@@ -8,6 +8,10 @@ export default class RenderMethod extends Component {
          data: "Bhappo"
       }
     }
+    componentDidMount (){
+        console.log('Hello from component from DidMount')
+        setTimeout(() =>  console.log('Hello from DidMount setTimout') ,5000)
+    }; 
     
     
   render() {
